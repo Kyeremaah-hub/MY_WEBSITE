@@ -1,0 +1,18 @@
+.nav-links{
+
+    color: blue;
+    text-decoration: none;
+    float: right;
+}
+
+.nav-links li {
+    text-decoration: none;
+    list-style: none;
+    display:inline-block;
+}
+
+.nav-links li a{
+    text-decoration: none
+    
+}
+

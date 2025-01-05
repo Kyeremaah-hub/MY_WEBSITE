@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methodist Church Ghana</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Methodist Church Ghana</div>
+            <button class="nav-toggle" aria-label="toggle navigation" id="nav-toggle">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Methodist Church Ghana</h1>
+                <p>Faith, Unity, and Service to God</p>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>
+                The Methodist Church Ghana, an offshoot of the Wesleyan tradition, is committed to spreading the Gospel,
+                fostering discipleship, and transforming lives. Guided by the teachings of John Wesley, we aim to build
+                a Christ-centered community that promotes love, faith, and service in all aspects of life.
+            </p>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="images/cheer.jpeg" alt="Event 1" onclick="openPopup(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/small_05 (1).jpeg" alt="Event 2" onclick="openPopup(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/small_north.jpeg" alt="Event 3" onclick="openPopup(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/small_tarkwah_news.jpeg" alt="Event 4" onclick="openPopup(this)">
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="resources">
+            <h2>Resources</h2>
+            <div class="resources-container">
+                <div class="resource-item">
+                    <a href="Pdfs/const.pdf" class="resource-link" download>
+                        <img src="images/logo-removebg-preview.png" alt="Constitution">
+                        <p>Download Constitution</p>
+                    </a>
+                </div>
+                <div class="resource-item">
+                    <a href="Pdfs/meth_hym.pdf" class="resource-link" download>
+                        <img src="images/logo-removebg-preview.png" alt="Hymnal">
+                        <p>Download Hymnal</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section class="schedule">
+            <h2>Weekly Schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Activity</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>Worship Service</td>
+                        <td>9:00 AM</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Bible Study</td>
+                        <td>6:30 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Prayer Meeting</td>
+                        <td>7:00 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Follow Us:</p>
+            <div class="social-icons">
+                <a href="#" class="icon"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="icon"><i class="fab fa-discord"></i></a>
+                <a href="#" class="icon"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+        <p>&copy; 2025 Methodist Church Ghana. All rights reserved.</p>
+    </footer>
+
+    <div id="popup-overlay">
+        <div id="popup-content">
+            <span id="popup-close">&times;</span>
+            <img id="popup-image" src="" alt="Gallery Image">
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        // JavaScript for toggling the navbar
+        const toggleButton = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
